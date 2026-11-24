@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cards do time — quem faz o quê na era da IA</title>
+  <style>
+body{font-family:Segoe UI,sans-serif;padding:20px;background:#f8fafc;color:#0f172a}h2{font-size:1.1rem;color:#0284c7;margin-bottom:14px;text-align:center}.grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}.papel{background:#fff;border:2px solid #cbd5e1;border-top:4px solid #0284c7;border-radius:10px;padding:12px 14px;cursor:pointer;transition:.2s}.papel:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(2,132,199,.15)}.papel .icon{font-size:1.5rem;margin-bottom:4px}.papel h3{font-size:.86rem;color:#0369a1;margin-bottom:4px}.papel p{font-size:.76rem;color:#475569;margin:0;line-height:1.4}.papel:nth-child(2){border-top-color:#10b981}.papel:nth-child(3){border-top-color:#7c3aed}.papel:nth-child(4){border-top-color:#ea580c}.papel:nth-child(5){border-top-color:#ec4899}.papel:nth-child(6){border-top-color:#f59e0b}.info{background:#e0f2fe;border-left:3px solid #0284c7;padding:10px 14px;border-radius:6px;margin-top:14px;font-size:.8rem;color:#0369a1;font-weight:600}
+  </style>
+</head>
+<body>
+<h2>👥 Papéis do time editorial em 2026</h2><div class="grade"><div class="papel" data-conv="Conversa com: redator, SEO, dados."><div class="icon">📝</div><h3>Editor de Conteúdo</h3><p>Define a pauta e o calendário. Aprova o que vai ao ar.</p></div><div class="papel" data-conv="Conversa com: editor, SEO, dados."><div class="icon">✍️</div><h3>Redator</h3><p>Escreve com SEO on-page, acessibilidade e narrativa.</p></div><div class="papel" data-conv="Conversa com: CMS, designer, redator."><div class="icon">💻</div><h3>Front-End</h3><p>Monta o visual. Cuida de performance e responsividade.</p></div><div class="papel" data-conv="Conversa com: front-end, editor."><div class="icon">⚙️</div><h3>Admin de CMS</h3><p>Configura campos, usuários e permissões do painel.</p></div><div class="papel" data-conv="Conversa com: redator, front-end, dados."><div class="icon">🔍</div><h3>Especialista em SEO</h3><p>Pesquisa palavras-chave, link building, otimização técnica.</p></div><div class="papel" data-conv="Conversa com: todos — é o hub de dados."><div class="icon">📊</div><h3>Analista de Dados</h3><p>Transforma métricas em decisões e relatórios.</p></div></div><div id="info-conv" class="info">Clique em qualquer cartão para ver com quem essa função conversa.</div>
+  <script>
+document.querySelectorAll(".papel").forEach(function(el){el.addEventListener("click",function(){document.getElementById("info-conv").textContent=el.dataset.conv;});});
+  </script>
+</body>
+</html>
